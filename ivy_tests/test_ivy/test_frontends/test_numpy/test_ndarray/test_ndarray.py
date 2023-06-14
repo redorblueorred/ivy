@@ -3066,7 +3066,7 @@ def test_numpy_instance_ptp(
     dtype_and_x=helpers.dtype_and_values(
         available_dtypes=[
             "int8",
-            "int16",
+            "uint8",
             "int16",
             "uint16",
             "int32",
