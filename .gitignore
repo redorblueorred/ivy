@@ -31,10 +31,6 @@ internal_automation_tools/
 .ivy/*
 .DS_Store*
 fn_path_cache
-.idea/ivy.iml
-.idea/misc.xml
-.idea/vcs.xml
-
 
 # Environments
 .env
