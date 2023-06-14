@@ -3057,21 +3057,28 @@ def test_numpy_instance_ptp(
         on_device=on_device,
     )
 
-## __ilshift__
+
+# __ilshift__
 @handle_frontend_method(
     class_tree=CLASS_TREE,
     init_tree="numpy.array",
     method_name="__ilshift__",
     dtype_and_x=helpers.dtype_and_values(
-        #available_dtypes=helpers.get_dtypes("valid"),
-        available_dtypes=["int8", "int16", "int16", "uint16",
-                          "int32", "uint32", "int64", "uint64"],
+        available_dtypes=[
+            "int8",
+            "int16",
+            "int16",
+            "uint16",
+            "int32",
+            "uint32",
+            "int64",
+            "uint64",
+        ],
         num_arrays=2,
         min_value=0,
         exclude_min=True,
     ),
 )
-
 def test_numpy_instance_ilshift__(
     dtype_and_x,
     frontend_method_data,
