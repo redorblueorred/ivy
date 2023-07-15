@@ -631,6 +631,9 @@ from ivy.functional.frontends.numpy.mathematical_functions.floating_point_routin
     _nextafter,
 )
 
+from ivy.functional.frontends.numpy.binary_operations.elementwise_bit_operations import ( left_shift )
+
+
 _frontend_array = array
 
 # initializing ufuncs #
